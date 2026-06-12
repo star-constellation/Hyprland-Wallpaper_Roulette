@@ -43,9 +43,9 @@ This bash script is executed after you logged in using exec-once in ".config/hyp
 
   You should set it based on the sequence.
 
- # Recommendation
+## Recommendation
   I would recommend to place the new image in the last "elif" you copied before the line "else" so you will not make it harder for yourself changing the sequence on the next elif.
- # Optional
+## Optional
   You can change the value of "sleep", the default is 900 which is equivalent to 15 minutes.
   Example:
          sleep 1200(for 20 minutes)
