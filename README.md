@@ -24,7 +24,14 @@ This bash script is executed after you logged in using exec-once in ".config/hyp
 ## Customization
 
 * To add more wallpapers, simply add additional elif statements and update the random number range accordingly.
+* for example: just ccpy the code; elif [ "$NUM" -eq 3 ]; then
+        swaybg -i "$PATH/YOURWALLPAPER.jpg" -m fill &
+ note:
+    This should be put at the center because it's elif. But if you want to put it in the last, just replace the previous last
+    lines of code to elif and make the final that you put into else.
 
+  You should also change the Number 4 in "NUM=$((RANDOM % 4 + 1))" change it to the number(4) + how many wallpapers you added.
+ 
 ## About
 
 This is my first Linux automation project. :)
