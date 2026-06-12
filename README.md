@@ -31,7 +31,28 @@ This bash script is executed after you logged in using exec-once in ".config/hyp
     lines of code to elif and make the final that you put into else.
 
   You should also change the Number 4 in "NUM=$((RANDOM % 4 + 1))" change it to the number(4) + how many wallpapers you added.
- 
+
+  You should also change the Number 6 or whatever number is there in elif [ "$NUM" -eq 6 ], change it based on the sequence of
+  the elif.
+  Example: 
+  if [ "$NUM" -eq 1 ]; then
+        swaybg -i "/home/jwo/themes/wallpapers/skirk.jpg" -m fill &
+    elif [ "$NUM" -eq 2 ]; then
+        swaybg -i "/home/jwo/themes/wallpapers/mikurealistic.jpg" -m fill &
+    elif [ "$NUM" -eq 3 ]; then
+
+  You should set it based on the sequence.
+
+ # Recommendation
+  I would recommend to place the new image in the last "elif" you copied before the line "else" so you will not make it harder for yourself changing the sequence on the next elif.
+ # Optional
+  You can change the value of "sleep", the default is 900 which is equivalent to 15 minutes.
+  Example:
+         sleep 1200(for 20 minutes)
+  or you can just add m at the end of the number to set it based on minutes.
+  Example:
+         sleep 20m(for 20 minutes)
+         
 ## About
 
 This is my first Linux automation project. :)
